@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    font-family: "Kanit", sans-serif;
+    margin: 0;
+}
+
+nav {
+    background-color: black;
+    color: white;
+
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.container .head-nav:hover {
+    text-shadow: 2px 1px 10px yellow;
+}
+
+.container a {
+    text-decoration: none;
+    color: white;
+}
+
+.container .sup {
+    display: none;
+}
+
+.container-content {
+    background-color: black;
+    height: 400px;
+    color: white;
+    display: flex;
+}
+
+.container-content .img-content {
+    height: 250px;
+    margin: 50px;
+    cursor: pointer;
+}
+
+.container-content .img-content:hover {
+    box-shadow: 10px 1px 10px red;
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .container .aboutsup {
+        display: none;
+    }
+
+    .container .sup {
+        display: block;
+    }
+}
